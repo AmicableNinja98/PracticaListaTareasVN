@@ -1,4 +1,4 @@
-package com.example.practicalistatareas.ui.theme
+package com.example.practicalistatareas.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
