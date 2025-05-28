@@ -12,4 +12,6 @@ class TaskRepository @Inject constructor(private val taskDao: TaskDao) {
     suspend fun updateTask(task: Task) = taskDao.updateTask(task)
 
     fun getAllTasks() = taskDao.getAllTasks()
+
+    suspend fun getTaskById(id : Long) = taskDao.getTaskById(id)
 }

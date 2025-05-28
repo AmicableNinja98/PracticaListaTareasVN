@@ -22,4 +22,7 @@ interface TaskDao {
 
     @Query("SELECT * FROM task")
     fun getAllTasks() : Flow<List<Task>>
+
+    @Query("SELECT * FROM task WHERE  id = :taskId")
+    suspend fun getTaskById(taskId : Long) : Task?
 }
