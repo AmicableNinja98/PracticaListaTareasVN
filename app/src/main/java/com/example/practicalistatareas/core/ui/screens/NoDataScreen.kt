@@ -10,6 +10,6 @@ import androidx.compose.ui.Modifier
 @Composable
 fun NoDataScreen(modifier: Modifier){
     Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center){
-        Text("Sin datos")
+        Text("No hay tareas para mostrar")
     }
 }
